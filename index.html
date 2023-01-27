@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<html>
+    <head>
+        <title>Encriptador</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0cf3687c78.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <header>
+        <a href="index.html"><img class="logo-alura" src="images/Logo a.png" alt="Logo de Alura"></a>
+        </header>
+
+        <main>
+            <div class="entrada">
+                <textarea class="text-in" cols="30" rows="10" placeholder="Ingrese su texto aquí" autofocus></textarea>
+                <div>
+                    <h6 class="info"><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </div>
+
+            <div class="display">
+                <div class="display_vacio">
+                    <img src="images/Muñeco.png" alt="Muñeco buscando texto" class="img_munieco">
+                    <p class="aviso_vacio">Ningún mensaje fue encontrado</p>
+                    <p class="instruccion">Ingresa el texto que desea encriptar o desencriptar</p>
+                </div>
+                <div class="text-out">
+                    <textarea class="mensaje" cols="20" rows="10"></textarea>
+                    <div class="btn_copiar">
+                        <button class="copiar" onclick="copiar()">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
